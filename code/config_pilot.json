@@ -1,0 +1,30 @@
+{
+  "dataset": "PhysioNet EEGBCI",
+  "subjects": [1, 2, 3, 4, 5],
+  "runs": [4, 8, 12],
+  "classes": ["left_hand", "right_hand"],
+  "tmin": 0.0,
+  "tmax": 4.0,
+  "bandpass": [7.0, 30.0],
+  "resample_hz": 80,
+  "test_subject": 5,
+  "validation_fraction": 0.2,
+  "random_seed": 42,
+  "batch_size": 32,
+  "max_epochs": 25,
+  "patience": 6,
+  "learning_rate": 0.001,
+  "hab": {
+    "hidden_dim": 48,
+    "cognitive_units": 6,
+    "top_k": 8,
+    "lambda_wm": 0.05,
+    "lambda_sw": 0.001,
+    "lambda_align": 0.01
+  },
+  "risk": {
+    "target_coverages": [1.0, 0.9, 0.8],
+    "error_cost": 5.0,
+    "confirmation_cost": 1.0
+  }
+}

@@ -1,0 +1,3 @@
+method,representation_mse,next_step_acc,note
+Last-state Copy,,,Not evaluated in pilot
+HAB-Prototype,0.005244006868451834,,Cognitive latent next-state proxy
